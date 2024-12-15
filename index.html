@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG POST APPLICATION</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BLOG POST MANAGEMENT</h1>
+    <form id="postForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="body" placeholder="Content" required></textarea>
+      <button type="submit">Add Post</button>
+    </form>
+    <h1> Posts</h1>
+    <div id="posts"></div>
+   
+  </div>
+
+  <!-- Modal for editing post -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Edit Post</h2>
+      <input type="text" id="editTitle" placeholder="Title" />
+      <textarea id="editBody" placeholder="Content"></textarea>
+      <button id="saveEdit">Save</button>
+      <button id="cancelEdit">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Confirmation dialog for deletion -->
+  <div id="deleteModal" class="modal hidden">
+    <div class="modal-content">
+      <p>Are you sure you want to delete this post?</p>
+      <button id="confirmDelete">Yes</button>
+      <button id="cancelDelete">No</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

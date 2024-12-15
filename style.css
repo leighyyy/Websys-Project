@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD; /* Soft pastel blue */
+    color: #1E88E5; /* Blue for text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #1565C0; /* Rich pastel blue */
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#postForm {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #F0F8FF; /* Slightly lighter blue */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#postForm input,
+#postForm textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #90CAF9; /* Light blue border */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #E3F2FD; /* Subtle blue tint */
+    font-family: 'Poppins', sans-serif;
+}
+
+#postForm button {
+    padding: 12px 25px;
+    background: #1E88E5; /* Rich pastel blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#postForm button:hover {
+    background: #1565C0; /* Slightly darker blue */
+}
+
+#posts .post {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #BBDEFB; /* Light pastel blue */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#posts .post h2 {
+    color: #1565C0;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#posts .post p {
+    color: #1E88E5;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#posts .post button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+#posts .post button.edit-btn {
+    background: #42A5F5; /* Blue for edit */
+}
+
+#posts .post button.delete-btn {
+    background: #E57373; /* Red for delete */
+}
+
+#posts .post button:hover {
+    opacity: 0.9;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #E3F2FD; /* Soft pastel blue */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-content button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.modal-content button#confirmDelete {
+    background: #E57373; /* Red */
+    color: white;
+}
+
+.modal-content button#cancelDelete,
+.modal-content button#cancelEdit {
+    background: #42A5F5; /* Blue */
+    color: white;
+}
+
+.modal-content button#saveEdit {
+    background: #1E88E5; /* Rich pastel blue */
+    color: white;
+}
